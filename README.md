@@ -1,6 +1,6 @@
 # Leetcode Practice problems
 
-1. 2 Sums
+# 1. 2 Sums
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
@@ -12,7 +12,7 @@ class Solution:
             dic[n] = i
         return
 
-2. Roman to Integer
+# 2. Roman to Integer
 
 class Solution:
     def romanToInt(self, s: str) -> int:
