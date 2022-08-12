@@ -1,18 +1,19 @@
 # Leetcode Practice problems
 
 1. 2 Sums
-    class Solution:
-        def twoSum(self, nums: List[int], target: int) -> List[int]:
 
-            dic = {}
-            for i, n in enumerate(nums): 
-                diff = target - n 
-                if diff in dic:
-                    return [dic[diff], i]
-                dic[n] = i
-            return
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        dic = {}
+        for i, n in enumerate(nums): 
+            diff = target - n 
+            if diff in dic:
+                return [dic[diff], i]
+            dic[n] = i
+        return
 
 2. Roman to Integer
+
 class Solution:
     def romanToInt(self, s: str) -> int:
         # Largest to smallest: add them up
